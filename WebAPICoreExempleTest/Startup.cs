@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace WebAPICoreExempleTest
 {
@@ -28,6 +29,7 @@ namespace WebAPICoreExempleTest
             services.AddDbContext<DataContext>(options => options.UseSqlServer(connection));
 
             services.AddMvc();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
