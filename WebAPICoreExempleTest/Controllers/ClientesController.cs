@@ -115,7 +115,7 @@ namespace WebAPICoreExempleTest.Controllers
             _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
 
-            return Ok(cliente);
+            return Ok("Cliente deletado.");
         }
 
         private bool ClienteExists(int id)
